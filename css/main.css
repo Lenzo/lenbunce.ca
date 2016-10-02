@@ -21,6 +21,17 @@ body {
 
 /*HEADER*/
 
+
+header ol {
+	padding: 0;
+	text-align: right;
+	margin: 3em 1em 2em 0;
+}
+
+header li {
+	display: inline-block;
+}
+
 header img {
 	margin: 1em;
 }
@@ -63,3 +74,4 @@ nav a:hover {
 .project-card img {
 	width: 100%;
 }
+
