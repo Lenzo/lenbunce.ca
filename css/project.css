@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+.project-info {
+	padding: 3rem 1rem;
+	width: 100%;
+}
+
+.project-info p {
+	max-width: 60rem;
+}
+
+main img {
+	
+}

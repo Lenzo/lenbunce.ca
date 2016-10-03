@@ -60,18 +60,33 @@ nav a:hover {
 /*PROJECT CARDS*/
 
 .portfolio-grid {
-	margin: 1em auto;
-	max-width: 45em;
+	margin: auto;
+	padding: .5em;
 	display: block;
+}
+
+@media only screen and (min-width: 60em) {
+
+	.portfolio-grid {
+		max-width: 80%;
+	}
+
+}
+
+.portfolio-grid article {
+	padding: 1rem;
 }
 
 .project-card {
 	background-color: lightgrey;
 	padding: 1em;
-	border: 1px solid #fff;
+	border: .5em solid #fff;
 }
 
 .project-card img {
 	width: 100%;
 }
 
+.project-card h2 {
+	white-space: nowrap;
+}
