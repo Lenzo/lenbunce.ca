@@ -13,14 +13,36 @@ html {
 @viewport { width: device-width; scale: 1; }
 
 .project-info {
-	padding: 3rem 1rem;
+	padding: 1rem;
 	width: 100%;
+}
+
+ol {
+	margin: 1rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+	.project-info {
+	padding-bottom: 3rem;
+	}
 }
 
 .project-info p {
 	max-width: 60rem;
+	margin: 0;
 }
 
-main img {
-	
+
+
+
+
+img {
+	padding: .5rem 1rem;
+	width: 100%;
 }
+
+h2, p {
+	margin: 1rem;
+}
+
