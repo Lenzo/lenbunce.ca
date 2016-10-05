@@ -25,18 +25,42 @@ body {
 nav ol {
 	padding: 0;
 	text-align: right;
-	margin: 3em 1em 2em 1rem;
 }
 
 header li {
 	display: inline-block;
+	padding: 1em;
 }
 
-header img {
-	margin: 1em;
+header {
+	padding: 1rem;
 }
+
+.logo-box {
+	text-align: right;
+}
+
+
 
 /*SIDEMENU NAV*/
+
+
+.nav {
+  display: none;
+  width: 50%;
+  height: 100vh;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+  position: absolute;
+  top: 6em;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
 
 nav {
 	color: #fff;
@@ -94,7 +118,7 @@ nav a:hover {
 /*FOOTER*/
 
 footer {
-	padding: 2rem 1rem;
+	padding: 2rem 0;
 	margin-top: 3rem;
 	width: 100%;
 	border-top: 1px solid #000;
@@ -104,9 +128,14 @@ footer a {
 	color: #000;
 }
 
-.footer-links {
-	text-align: right;
+
+@media only screen and (min-width: 50em) {
+
+	.footer-links {
+		text-align: right;
+	}
 }
+
 
 .wrapper {
 	width: 100%;

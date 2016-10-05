@@ -1,4 +1,4 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
@@ -7,32 +7,36 @@ x<!DOCTYPE html>
   <link href="css/grid.css" rel="stylesheet">
 </head>
 <body>
-	<header class="grid">
+	<header>
+		<div class="grid">
 
-		<img src="http://placehold.it/100x100">
+			<input type="checkbox" class="nav-check" id="nav-check">
+			<label class="unit xs-1-2 nav-label" for="nav-check">Menu</label>
 
-		<!-- <nav class="unit s-1 m-1-2 l-1-4">
-			<img src="images/logo.svg">
-			<ol>
-				<li><h2>Work</h2>
-					<ol>
-						<li>UX / UI</li>
-						<li>Type</li>
-						<li>Identity</li>
-					</ol>
-				</li>
-				<li>
-					<h2>About</h2>
-					<p>Len Bunce is a designer, problem solver, and fighter for social change.</p>
-				</li>
-				<li>
-					<h2>Contact</h2>
-					<a href=""><p>Email</p></a>
-					<a href=""><p>Call</p></a>
-				</li>
-			</ol>
-		</nav> -->
-
+			<nav class="nav">
+				<ol class="unit">
+					<li><h2>Work</h2>
+						<ol>
+							<li>UX / UI</li>
+							<li>Type</li>
+							<li>Identity</li>
+						</ol>
+					</li>
+					<li>
+						<h2>About</h2>
+						<p>Len Bunce is a designer, problem solver, and fighter for social change.</p>
+					</li>
+					<li>
+						<h2>Contact</h2>
+						<a href=""><p>Email</p></a>
+						<a href=""><p>Call</p></a>
+					</li>
+				</ol>
+	  		</nav>
+	  		<div class="logo-box unit xs-1-2">
+	  			<img src="http://placehold.it/100x100">
+	  		</div>
+		</div>
 	</header>
 
 	<main class="grid">
@@ -98,14 +102,12 @@ x<!DOCTYPE html>
 	<footer>
 		<div class="wrapper">
 			<div class="grid footer-info">
-				<div class="unit s-1 m-1-2 footer-copyright">
+				<div class="unit xs-1 m-1-2 footer-copyright">
 					<aside> &copy; Len Bunce 2016</aside>
 				</div>
-				<div class="unit s-1 m-1-2 footer-links">
+				<div class="unit xs-1 m-1-2 footer-links">
 					<a href="#">Call</a>
 					<a href="#">Email</a>
-					<a href="#">Instagram</a>
-					<a href="#">SnapChat</a>
 					<a href="#">LinkedIn</a>
 				</div>
 			</div>
