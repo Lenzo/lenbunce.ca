@@ -34,6 +34,11 @@ ol {
 	margin-bottom: 0
 }
 
+.project-header li {
+	display: inline-block;
+	padding: 1em;
+}
+
 .project-header {
 	border-bottom: 2px solid black;
 }
