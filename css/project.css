@@ -6,6 +6,9 @@ html {
   box-sizing: inherit;
 }
 
+
+
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -22,7 +25,15 @@ ol {
 }
 
 .project-header {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
+}
+
+.project-header a {
+	color: #000;
+}
+
+.project-header a:nth-child(3){
+	background-color: red;
 }
 
 main header {
@@ -64,5 +75,3 @@ main img {
 	padding-bottom: 1rem;
 	width: 100%;
 }
-
-

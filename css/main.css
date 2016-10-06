@@ -34,13 +34,10 @@ header li {
 
 header {
 	padding: 2rem 1rem;
-	border-bottom: 5px solid black;
+	border-bottom: 4px solid black;
 	margin-bottom: 2rem;
 }
 
-header img {
-	text-align: right;
-}
 
 @media only screen and (min-width: 60em) {
 
@@ -50,6 +47,10 @@ header img {
 }
 
 .logo-box {
+	text-align: right;
+}
+
+.lb-logo {
 	width: 3em;
 }
 
@@ -67,7 +68,7 @@ header img {
 .nav-check:checked ~ .nav {
   display: block;
   position: absolute;
-  top: 6em;
+  top: 7.5em;
 }
 
 .nav-check {
@@ -78,8 +79,25 @@ header img {
 nav {
 	color: #fff;
 	background-color: #000;
-	padding: 1em;
+	padding: 2em;
 	margin-left: -1rem;
+	z-index: 1000;
+	position: absolute;
+	top: 7rem;
+}
+
+header nav li {
+	width: 100%;
+	max-width: 20em;
+}
+
+nav p {
+	text-align: left;
+}
+
+nav h2 {
+	border-top: 2px solid #fff;
+	text-align: right
 }
 
 @media only screen and (min-width: 60em) {
@@ -105,9 +123,10 @@ nav a:hover {
 /*PROJECT CARDS*/
 
 .project-card {
-	background-color: lightgrey;
-	padding: 1em;
-	border: .5em solid #fff;
+	margin: .5rem;
+	padding-top: .5rem;
+	border-top: 2px solid #000;
+	position: relative;
 }
 
 .project-card img {
@@ -115,13 +134,21 @@ nav a:hover {
 }
 
 .project-card h2 {
-	white-space: nowrap;
+	position: absolute;
+	font-weight: normal;
+	left: .5rem;
 }
+
+.project-card a {
+	color: #000;
+}
+
 
 /*PORTFOLIO GRID*/
 
 .portfolio-grid {
 	margin: auto;
+	margin-bottom: 3rem;
 	padding: .5em;
 	display: block;
 }
@@ -134,17 +161,13 @@ nav a:hover {
 
 }
 
-.portfolio-grid article {
-	padding: 1rem;
-}
-
 /*FOOTER*/
 
 footer {
 	padding: 2rem 0;
 	margin-top: 3rem;
 	width: 100%;
-	border-top: 1px solid #000;
+	border-top: 3px solid #000;
 }
 
 footer a {
