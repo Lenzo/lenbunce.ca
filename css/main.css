@@ -33,7 +33,16 @@ header li {
 }
 
 header {
-	padding: 1rem;
+	padding: 2rem 1rem;
+	border-bottom: 2px solid black;
+	margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+	header {
+		padding: 2rem;
+	}
 }
 
 .logo-box {
@@ -83,6 +92,22 @@ nav a:hover {
 
 /*PROJECT CARDS*/
 
+.project-card {
+	background-color: lightgrey;
+	padding: 1em;
+	border: .5em solid #fff;
+}
+
+.project-card img {
+	width: 100%;
+}
+
+.project-card h2 {
+	white-space: nowrap;
+}
+
+/*PORTFOLIO GRID*/
+
 .portfolio-grid {
 	margin: auto;
 	padding: .5em;
@@ -99,20 +124,6 @@ nav a:hover {
 
 .portfolio-grid article {
 	padding: 1rem;
-}
-
-.project-card {
-	background-color: lightgrey;
-	padding: 1em;
-	border: .5em solid #fff;
-}
-
-.project-card img {
-	width: 100%;
-}
-
-.project-card h2 {
-	white-space: nowrap;
 }
 
 /*FOOTER*/

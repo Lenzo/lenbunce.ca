@@ -17,9 +17,8 @@ html {
 
 
 ol {
-	margin: 1em;
-	padding-top: 1em;
 	text-align: right;
+	margin-bottom: 0
 }
 
 
@@ -33,25 +32,30 @@ ol {
 @media only screen and (min-width: 38em) {
 
 	.project-info {
-	padding-bottom: 3rem;
+
+	margin: 2rem 0;
+
+	}
+}
+
+@media only screen and (min-width: 60em) {
+
+	.project-info {
+		margin: 3rem 0rem 2rem;
 	}
 }
 
 .project-info p {
 	max-width: 60rem;
-	margin: 0;
 }
 
 
 
 /*IMAGES SECTION*/
 
-img {
+main img {
 	padding-bottom: 1rem;
 	width: 100%;
 }
 
-h2, p {
-	margin: 1rem;
-}
 
