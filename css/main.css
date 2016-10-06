@@ -19,7 +19,22 @@ body {
 }
 
 
+.container {
+  display: flex;
+  height: 3.5rem;
+}
+
+.flex-item {
+  width: 50%;
+  margin: auto;
+}
+
+
 /*HEADER*/
+
+.nav-label {
+	font-weight: bold;
+}
 
 
 nav ol {

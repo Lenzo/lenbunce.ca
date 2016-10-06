@@ -26,12 +26,6 @@ html {
 	}
 }
 
-/*SIDE NAV FIXES*/
-
-.nav-check:checked ~ .nav {
-  top: 7em;
-}
-
 /*PROJECT HEADER SECTION*/
 
 
