@@ -21,6 +21,13 @@ ol {
 	margin-bottom: 0
 }
 
+.project-header {
+	border-bottom: 1px solid black;
+}
+
+main header {
+	padding-top: 0;
+}
 
 /*PROJECT INFO SECTION*/
 
