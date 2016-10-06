@@ -18,6 +18,22 @@ html {
 
 /*HEADER SECTION*/
 
+@media only screen and (min-width: 60em) {
+
+	header {
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+/*SIDE NAV FIXES*/
+
+.nav-check:checked ~ .nav {
+  top: 7em;
+}
+
+/*PROJECT HEADER SECTION*/
+
 
 ol {
 	text-align: right;
