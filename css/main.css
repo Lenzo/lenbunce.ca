@@ -113,6 +113,9 @@ nav h2 {
 	text-align: right;
 	padding-top: .5rem;
 	margin-bottom: .75rem;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+
 }
 
 nav > ol {
@@ -162,6 +165,9 @@ nav a:hover {
 	font-weight: normal;
 	left: .5rem;
 	z-index: 900;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+
 }
 
 .project-card a {
