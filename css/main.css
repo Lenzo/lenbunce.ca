@@ -66,6 +66,23 @@ header {
 }
 
 
+/*BUTTON STYLES*/
+
+.button {
+	border: 3px solid #000;
+	text-align: center;
+	padding: .5rem;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: inherit;
+}
+
+.button:hover {
+	color: #fff;
+	background-color: #000;
+}
+
 
 /*SIDEMENU NAV*/
 
@@ -75,6 +92,8 @@ header {
   width: 100%;
   height: 100vh;
 }
+
+
 
 @media only screen and (min-width: 42em) {
 
@@ -96,8 +115,6 @@ header {
 
 
 }
-
-
 
 .nav-check:checked ~ .nav {
   display: block;
@@ -171,28 +188,7 @@ nav a {
 }
 
 
-/*PROJECT CARDS*/
 
-.project-card {
-	margin: .5rem;
-	padding-top: .5rem;
-	border-top: 2px solid #000;
-	position: relative;
-}
-
-.project-card img {
-	width: 100%;
-}
-
-.project-card h2 {
-	position: absolute;
-	font-weight: normal;
-	left: .5rem;
-	z-index: 900;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-
-}
 
 .project-card a {
 	color: #000;
@@ -215,6 +211,42 @@ nav a {
 	}
 
 }
+
+/*PROJECT CARDS*/
+
+.project-card {
+	margin: .5rem;
+	padding-top: .5rem;
+	border-top: 2px solid #000;
+	position: relative;
+	font-weight: normal;
+}
+
+.project-card img {
+	width: 100%;
+}
+
+.project-card h2 {
+	position: absolute;
+	left: .5rem;
+	z-index: 900;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: inherit;
+
+}
+
+.project-card:hover {
+	border-top: 5px solid #000;
+	padding-top: calc(.5rem - 3px);
+	font-weight: bold;
+} 
+
+/*
+.project-card h2:hover{
+	font-weight: bold;
+}*/
+
 
 /*FOOTER*/
 
