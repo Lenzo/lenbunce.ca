@@ -41,6 +41,7 @@ ol {
 
 .project-header {
 	border-bottom: 2px solid black;
+	margin: 0 1rem;
 }
 
 .project-header a {
@@ -89,4 +90,21 @@ main header {
 main img {
 	padding-bottom: 1rem;
 	width: 100%;
+}
+
+WRAPPER÷
+
+.wrapper {
+	width: 100%;
+	padding: 1rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+	.wrapper {
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+
 }

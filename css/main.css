@@ -105,11 +105,14 @@ header nav li {
 
 nav p {
 	text-align: left;
+
 }
 
 nav h2 {
 	border-top: 2px solid #fff;
-	text-align: right
+	text-align: right;
+	padding-top: .5rem;
+	margin-bottom: .75rem;
 }
 
 nav > ol {
@@ -170,7 +173,7 @@ nav a:hover {
 
 .portfolio-grid {
 	margin: auto;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	padding: .5em;
 	display: block;
 }
@@ -185,7 +188,17 @@ nav a:hover {
 
 /*FOOTER*/
 
-footer {
+nav > ol {
+	padding-top: 1.8rem;
+}
+
+@media only screen and (min-width: 60em) {
+	nav > ol {
+		padding-top: 5.2rem;
+	}
+}
+
+.footer-rule {
 	padding: 2rem 0;
 	margin-top: 3rem;
 	width: 100%;
@@ -194,6 +207,7 @@ footer {
 
 footer a {
 	color: #000;
+	text-decoration: none;
 }
 
 
