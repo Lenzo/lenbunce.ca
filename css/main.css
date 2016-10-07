@@ -39,7 +39,6 @@ body {
 
 nav ol {
 	padding: 0;
-	text-align: right;
 }
 
 
@@ -77,11 +76,25 @@ header {
   height: 100vh;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 42em) {
 
 	.nav {
-		width: 50%
+		width: 50%;
 	}
+
+	nav > ol {
+	float: right;
+}
+
+	nav h2 {
+		text-align: right;
+	}
+
+	nav ol {
+		text-align: right;
+	}
+
+
 }
 
 
@@ -112,24 +125,18 @@ header nav li {
 	max-width: 20em;
 }
 
-nav p {
-	text-align: left;
 
-}
 
 nav h2 {
 	border-top: 2px solid #fff;
-	text-align: right;
 	padding-top: .5rem;
 	margin-bottom: .75rem;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 
 }
 
-nav > ol {
-	float: right;
-}
+
 
 
 @media only screen and (min-width: 60em) {
