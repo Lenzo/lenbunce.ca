@@ -73,9 +73,18 @@ header {
 
 .nav {
   display: none;
-  width: 50%;
+  width: 100%;
   height: 100vh;
 }
+
+@media only screen and (min-width: 38em) {
+
+	.nav {
+		width: 50%
+	}
+}
+
+
 
 .nav-check:checked ~ .nav {
   display: block;
@@ -139,13 +148,21 @@ nav ol {
 	padding: .5rem;
 }
 
-nav a {
-	color: #fff;
+.vertical-ol li:hover {
+	background-color: grey;
 }
 
-nav a:hover {
-	color: hotpink;
+nav a {
+	color: #fff;
+	text-decoration: none;
+	width: 100%;
+	display: block;
 }
+
+.vertical-ol nav a:hover {
+	color: #000;
+}
+
 
 /*PROJECT CARDS*/
 
