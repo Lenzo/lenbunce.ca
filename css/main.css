@@ -76,11 +76,20 @@ header {
 	text-transform: uppercase;
 	font-weight: bold;
 	width: inherit;
+	-webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
 }
 
 .button:hover {
-	color: #fff;
-	background-color: #000;
+	cursor: pointer;
+}
+
+.button:active {
+	background-color: #eee;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
 }
 
 
@@ -135,6 +144,9 @@ nav {
 	z-index: 1000;
 	position: absolute;
 	top: 7rem;
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(89,88,89,0.59);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(89,88,89,0.59);
+	box-shadow: 3px 3px 0px 0px rgba(89,88,89,0.59);
 }
 
 header nav li {
