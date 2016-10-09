@@ -65,34 +65,6 @@ header {
 	width: 3em;
 }
 
-
-/*BUTTON STYLES*/
-
-.button {
-	border: 3px solid #000;
-	text-align: center;
-	padding: .5rem;
-	color: #000;
-	text-transform: uppercase;
-	font-weight: bold;
-	width: inherit;
-	-webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
-	box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
-}
-
-.button:hover {
-	cursor: pointer;
-}
-
-.button:active {
-	background-color: #eee;
-	-webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-}
-
-
 /*SIDEMENU NAV*/
 
 
@@ -102,17 +74,19 @@ header {
   height: 100vh;
 }
 
+.nav-photo {
+	display: none;
+}
+
 
 
 @media only screen and (min-width: 42em) {
 
-	.nav {
-		width: 50%;
-	}
+	
 
 	nav > ol {
-	float: right;
-}
+		float: right;
+	}
 
 	nav h2 {
 		text-align: right;
@@ -120,6 +94,11 @@ header {
 
 	nav ol {
 		text-align: right;
+	}
+
+	.nav-photo {
+		display: inline-block;
+		width: 100%;
 	}
 
 
@@ -232,32 +211,36 @@ nav a {
 	border-top: 2px solid #000;
 	position: relative;
 	font-weight: normal;
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
 }
 
 .project-card img {
 	width: 100%;
+	padding: .5rem;
+}
+
+.project-card a {
+	text-decoration: none;
 }
 
 .project-card h2 {
-	position: absolute;
-	left: .5rem;
 	z-index: 900;
     text-transform: uppercase;
     font-size: 1.1rem;
     font-weight: inherit;
+    margin: .5em;
 
 }
 
 .project-card:hover {
 	border-top: 5px solid #000;
 	padding-top: calc(.5rem - 3px);
-	font-weight: bold;
+
 } 
 
-/*
-.project-card h2:hover{
-	font-weight: bold;
-}*/
+
 
 
 /*FOOTER*/
@@ -295,7 +278,7 @@ footer a {
 
 .wrapper {
 	width: 100%;
-	margin: 1rem;
+	margin: 2rem;
 }
 
 @media only screen and (min-width: 60em) {
@@ -308,3 +291,28 @@ footer a {
 
 }
 
+/*BUTTON STYLES*/
+
+.button {
+	border: 3px solid #000;
+	text-align: center;
+	padding: .5rem;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: inherit;
+	-webkit-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.button:active {
+	background-color: #eee;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+}
