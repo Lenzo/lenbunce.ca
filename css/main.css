@@ -19,16 +19,6 @@ body {
 }
 
 
-.container {
-  display: flex;
-  height: 3.5rem;
-}
-
-.flex-item {
-  width: 50%;
-  margin: auto;
-}
-
 
 /*HEADER*/
 
@@ -44,25 +34,27 @@ nav ol {
 
 header {
 	padding: 2rem 1rem;
-	border-bottom: 4px solid black;
+	border-bottom: 3px solid black;
 	margin-bottom: 2.5rem;
 }
 
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
 
 	header {
-		padding: 2rem;
+		padding: 2rem 2rem;
 		margin-bottom: 6rem;
 	}
 }
 
-.logo-box {
-	text-align: right;
-}
+
 
 .lb-logo {
 	width: 3em;
+}
+
+.logo-box {
+	float: right;
 }
 
 /*SIDEMENU NAV*/
@@ -74,18 +66,81 @@ header {
   height: 100vh;
 }
 
-.nav-photo {
-	display: none;
+nav {
+	color: #fff;
+	background-color: #000;
+	opacity: .92;
+	padding: 1em;
+	margin-left: -1rem;
+	z-index: 1000;
+
+	-webkit-box-shadow: 3px 3px 2px 0px rgba(89,88,89,0.59);
+	-moz-box-shadow: 3px 3px 2px 0px rgba(89,88,89,0.59);
+	box-shadow: 3px 3px 0px 0px rgba(89,88,89,0.59);
+}
+
+nav > ol {
+	margin-bottom: 3rem;
+}
+
+nav > ol > li {
+	overflow: hidden
+}
+
+nav > ol > li p {
+	max-width: 20em;
+	text-align: left;
+}
+
+nav h2 {
+	text-align: left;
+	border-top: 2px solid #fff;
+	padding-top: .5rem;
+	margin-bottom: .75rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	width: 100%;
+	display: block;
 }
 
 
+nav ol {
+	text-align: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+.vertical-ol li {
+	padding: .5rem;
+	transition: background-color 1s ease;
+
+}
+
+.vertical-ol li:hover {
+	background-color: #555;
+}
+
+.vertical-ol nav a:hover {
+	color: #000;
+}
+
+
+@media only screen and (min-width: 38em) {
+
+	nav {
+		margin-left: -2rem;
+	}
+}
 
 @media only screen and (min-width: 42em) {
 
-	
-
-	nav > ol {
-		float: right;
+	nav {
+		padding: 2em;
 	}
 
 	nav h2 {
@@ -96,13 +151,23 @@ header {
 		text-align: right;
 	}
 
-	.nav-photo {
-		display: inline-block;
-		width: 100%;
+	nav > ol > li p {
+		float: right;
+		text-align: right;
+
 	}
-
-
 }
+
+@media only screen and (min-width: 60em) {
+
+	nav > ol {
+		max-width: 30em;
+		margin: 0 auto;
+	}
+}
+
+
+/*TOGGLE NAV STUFF*/
 
 .nav-check:checked ~ .nav {
   display: block;
@@ -115,76 +180,6 @@ header {
   top: -3em;
 }
 
-nav {
-	color: #fff;
-	background-color: #000;
-	padding: 2em;
-	margin-left: -1rem;
-	z-index: 1000;
-	position: absolute;
-	top: 7rem;
-	-webkit-box-shadow: 3px 3px 2px 0px rgba(89,88,89,0.59);
-	-moz-box-shadow: 3px 3px 2px 0px rgba(89,88,89,0.59);
-	box-shadow: 3px 3px 0px 0px rgba(89,88,89,0.59);
-}
-
-header nav li {
-	width: 100%;
-	max-width: 20em;
-}
-
-
-
-nav h2 {
-	border-top: 2px solid #fff;
-	padding-top: .5rem;
-	margin-bottom: .75rem;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-
-}
-
-
-
-
-@media only screen and (min-width: 60em) {
-
-	nav {
-		margin-left: -2rem;
-	}
-}
-
-nav ol {
-	list-style-type: none;
-	padding: 0;
-}
-
-.vertical-ol li {
-	padding: .5rem;
-}
-
-.vertical-ol li:hover {
-	background-color: grey;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-	width: 100%;
-	display: block;
-}
-
-.vertical-ol nav a:hover {
-	color: #000;
-}
-
-
-
-
-.project-card a {
-	color: #000;
-}
-
 
 /*PORTFOLIO GRID*/
 
@@ -193,6 +188,13 @@ nav a {
 	margin-bottom: 2rem;
 	padding: .5em;
 	display: block;
+}
+
+@media only screen and (min-width: 38em) {
+
+	.portfolio-grid {
+		padding: 1.5em;
+	}
 }
 
 @media only screen and (min-width: 60em) {
@@ -211,9 +213,11 @@ nav a {
 	border-top: 2px solid #000;
 	position: relative;
 	font-weight: normal;
-	-webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 0px 2px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 0px 2px rgba(0,0,0,1);
+	box-shadow: 0px 0px 0px 2px rgba(0,0,0,1);
+	
 }
 
 .project-card img {
@@ -223,6 +227,7 @@ nav a {
 
 .project-card a {
 	text-decoration: none;
+	color: #000;
 }
 
 .project-card h2 {
@@ -233,15 +238,6 @@ nav a {
     margin: .5em;
 
 }
-
-.project-card:hover {
-	border-top: 5px solid #000;
-	padding-top: calc(.5rem - 3px);
-
-} 
-
-
-
 
 /*FOOTER*/
 
@@ -311,7 +307,6 @@ footer a {
 }
 
 .button:active {
-	background-color: #eee;
 	-webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
 	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
