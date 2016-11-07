@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+
+/*HEADER SECTION*/
+
+header {
+	margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+	header {
+		padding: 2rem;
+	}
+}
+
+/*PROJECT HEADER SECTION*/
+
+
+ol {
+	text-align: right;
+	margin-bottom: 0
+}
+
+.project-header li {
+	display: inline-block;
+	padding: 1em;
+}
+
+.project-header {
+	border-bottom: 3px solid black;
+	margin: 0 1rem;
+}
+
+.project-header a {
+	color: #000;
+}
+
+.project-header a:nth-child(3){
+	background-color: red;
+}
+
+main header {
+	padding-top: 0;
+}
+
+/*PROJECT INFO SECTION*/
+
+.project-info {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+	.project-info {
+
+	margin: 2rem 0;
+
+	}
+}
+
+@media only screen and (min-width: 60em) {
+
+	.project-info {
+		margin: 3rem 0rem 2rem;
+	}
+}
+
+.project-info p {
+	max-width: 60rem;
+}
+
+/*IMAGES SECTION*/
+
+main img {
+	padding-bottom: 1rem;
+	width: 100%;
+}
+
+/*WRAPPER*/
+
+.wrapper {
+	width: 100%;
+	padding: 1rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+	.wrapper {
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+
+}
