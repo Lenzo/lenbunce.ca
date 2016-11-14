@@ -1,5 +1,7 @@
 {% include head.html %}
 
+{% assign p = site.data[page.data] %}
+
 <body>
 
 {% include header.html %}
@@ -8,7 +10,23 @@
 
 <main>
 
-{{content}}
+		<div class="grid portfolio-grid">
+			<div class="project-info">
+				<h2 class="unit s-1 m-1-2">{{p.piece.title}}</h2>
+				<p class="unit s-1 m-1-2">{{p.piece.intro}}</p>
+			</div>
+			<div class="project-images">
+
+
+					<img src="{{site.baseurl}}/images/{{p.piece.img1}}">
+					<img src="{{site.baseurl}}/images/{{p.piece.img2}}">
+					<img src="{{site.baseurl}}/images/{{p.piece.img3}}">
+					<img src="{{site.baseurl}}/images/{{p.piece.img4}}">
+					
+
+				
+			</div>
+		</div>	
 
 </main>
 

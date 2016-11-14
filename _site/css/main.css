@@ -194,6 +194,7 @@ nav ol {
 	margin-bottom: 2rem;
 	padding: .5em;
 	display: block;
+	width: 80%;
 }
 
 @media only screen and (min-width: 38em) {
